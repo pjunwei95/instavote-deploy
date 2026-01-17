@@ -4,14 +4,13 @@ resources:
 - ../base  
 patchesStrategicMerge:  
 - deployment.yaml
-- service.yaml  
 namespace: instavote
 images:  
   - name: schoolofdevops/vote  
     newTag: v4  
 replicas:  
   - name: vote  
-    count: 2
+    count: 0
 commonLabels:  
   project: instavote  
   env: staging  
